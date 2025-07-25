@@ -1,0 +1,36 @@
+.StartMenuView { 
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.StartMenuView h1 {
+  margin: 1rem 0;
+  line-height: 1;
+}
+
+.StartMenuView .PreviewImg {
+  max-width: min(100%, 512px);
+  aspect-ratio: 4/3;
+  object-fit: cover;
+}
+
+.StartMenuView .HighScore {
+  margin: 1rem 0;
+}
+
+.StartMenuView .HighScore dt {
+  margin: 0;
+  text-align: center;
+}
+
+.StartMenuView .HighScore dd {
+  margin: 0;
+  text-align: center;
+}
+
+.StartMenuView .ActionWrapper {
+  display: flex;
+  gap: 1rem;
+}

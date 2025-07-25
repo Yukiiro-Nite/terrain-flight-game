@@ -1,0 +1,75 @@
+.GameHudView {
+  z-index: 2;
+  pointer-events: none;
+}
+
+.GameHudView .GameScore {
+  margin: 1rem auto;
+  max-width: min(100%, 256px);
+  font-family: serif;
+  background-color: #ffffff80;
+}
+
+.GameHudView .GameScore .Title {
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.GameHudView .GameScore .Score {
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: monospace;
+}
+
+.GameHudView .EndScreen {
+
+}
+
+.GameHudView .EndScreen[open] {
+  pointer-events: all;
+}
+
+.GameHudView .EndScreen .Stats {
+  margin: 0 0 1rem 0;
+}
+
+.GameHudView .EndScreen .Stats .CurrentScoreTitle {
+  text-align: center;
+  margin: 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.GameHudView .EndScreen .Stats .CurrentScore {
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: monospace;
+}
+
+.GameHudView .EndScreen .Stats .HighScoreTitle {
+  text-align: center;
+  margin: 1rem 0 0 0;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.GameHudView .EndScreen .Stats .HighScoreTitle .NewHighScore {
+  display: block;
+}
+
+.GameHudView .EndScreen .Stats .HighScore {
+  text-align: center;
+  margin: 0;
+  font-size: 1.25rem;
+  font-family: monospace;
+}
+
+.GameHudView .ActionWrapper {
+  display: flex;
+  gap: 1rem;
+}
+
