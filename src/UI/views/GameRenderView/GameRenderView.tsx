@@ -13,12 +13,14 @@ import { Player } from "../../components/Player/Player"
 export interface GameRenderViewProps {
   show?: boolean
 }
-export type ControlKeys = 'up' | 'down' | 'left' | 'right'
+export type ControlKeys = 'up' | 'down' | 'left' | 'right' | 'space' | 'shift'
 const Controls: Record<ControlKeys, ControlKeys> = {
   up: 'up',
   down: 'down',
   left: 'left',
   right: 'right',
+  space: 'space',
+  shift: 'shift'
 }
 
 export const GameRenderView = (props: GameRenderViewProps) => {
@@ -34,6 +36,8 @@ export const GameRenderView = (props: GameRenderViewProps) => {
     { name: Controls.down, keys: ['ArrowDown', 'KeyS'] },
     { name: Controls.left, keys: ['ArrowLeft', 'KeyA'] },
     { name: Controls.right, keys: ['ArrowRight', 'KeyD'] },
+    { name: Controls.space, keys: ['Space'] },
+    { name: Controls.shift, keys: ['Shift'] },
   ], [])
 
   const gltfObj = useLoader(GLTFLoader, levelData.model)
